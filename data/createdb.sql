@@ -30,7 +30,7 @@ CREATE TABLE student
 
 CREATE TABLE high_school
 (
-	school_id serial PRIMARY KEY,
+	school_id varchar(20) PRIMARY KEY,
 	FOREIGN KEY state REFERENCES state.state_abbr NOT NULL,
 	name varchar(120) NOT NULL,
 	is_impoverished boolean NOT NULL,
