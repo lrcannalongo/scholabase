@@ -23,7 +23,7 @@ CREATE TABLE student
 	city varchar(120) NOT NULL,
 	FOREIGN KEY state REFERENCES state.state_abbr NOT NULL, --might be easier to have a states table as a constraint
 	sex varchar(10), -- can either add constraint or control with dropdown in ui
-	citizen_status boolean, --assuming citizem or not, but if >2 options, switch to varchar
+	us_citizen boolean, --assuming citizen or not, but if >2 options, switch to varchar
 	dob date NOT NULL,
 	FOREIGN KEY ethnicity REFERENCES ethnicities.ethnicity  
 )
@@ -39,10 +39,10 @@ CREATE TABLE high_school
 
 CREATE TABLE college
 (
-	college_id serial PRIMARY KEY,
+	college_id varchar(20) PRIMARY KEY,
 	is_public boolean NOT NULL,
 	college_name varchar(120),
-	FOREIGN KEY state REFERENCES state.state_abbr NOT NULL,
+	FOREIGN KEY state REFERENCES state.state_abbr NOT NULL
 )
 
 CREATE TABLE majors
@@ -50,6 +50,7 @@ CREATE TABLE majors
 	major_id serial PRIMARY KEY,
 	type varchar(120) NOT NULL, --need a bit of clarification, is this a set list?
 	title varchar(120) NOT NULL
+	is_stem boolean NOT NULL
 )
 
 CREATE TABLE collegemajors

@@ -1,0 +1,14 @@
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of Science, Computer Science', TRUE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of Science, Chemistry', TRUE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of Science, Biology', TRUE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of Science, Physics', TRUE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of Science, Cyber Security', TRUE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of Science, Electrical Engineering', TRUE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Fine Arts, Fashion Marketing', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Fine Arts, Illustration', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Arts, Economics', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Arts, Graphic Design', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Arts, Marketing', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Arts, Education', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Arts, Business Administration', FALSE);
+INSERT INTO majors VALUES ( DEFAULT, 'Bachelor of the Arts, Finanace', FALSE);
